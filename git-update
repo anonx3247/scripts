@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# Simple script to simplify pushing with git
+
+if ["$1" = ""]; then
+  echo "You need to specify a commit message"
+fi
+
+git add --all
+git commit -m "$1"
+git push
